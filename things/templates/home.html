@@ -6,6 +6,15 @@
   <h1>
     Things
   </h1>
-  <p>Some stuff about things goes here.</p>
+  {% if messages %}
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+  {% endif %}
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>

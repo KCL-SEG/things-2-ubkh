@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,django,macos,linux,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,macos,linux,windows
 
+### VSCode ###
+.vscode
+.history
+
 ### Django ###
 *.log
 *.pot
